@@ -1,0 +1,32 @@
+.podcast-title {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    margin: -3px 0 5px 0;
+}
+
+.podcast-description {
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+}
+
+.podcast-image {
+    height: 60px;
+    width: 60px;
+}
+
+.podcast-container {
+    height: 60px;
+    width: 364.4px;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-ending-block {
+    height: 30px;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid black;
+}

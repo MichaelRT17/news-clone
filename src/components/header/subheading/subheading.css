@@ -1,0 +1,32 @@
+.current-date {
+    font-size: 12px;
+}
+
+.user-links {
+    font-size: 9px;
+    color: lightblue;
+}
+
+.user-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.6px;
+    width: 122.8px;
+}
+
+.dividing-line {
+    color: lightgray;
+    font-size: 10px;
+}
+
+.subheading-container {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 374.4px;
+    height: 12.8px;
+    padding: 13px 20px 10px;
+}
