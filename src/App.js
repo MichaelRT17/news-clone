@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Header from './components/header/Header'
+import Header from './components/header/Header';
+import TopStories from './components/topStories/TopStories';
 import './App.css';
 
 class App extends Component {
@@ -8,21 +9,21 @@ class App extends Component {
     super(props);
 
     this.state = {
-      articles: []
+      topStories: []
     }
   }
 
   componentDidMount() {
-    axios.get('/api/getArticles').then(res => {
+    axios.get('/api/getTopStories').then(res => {
       this.setState({
-        articles: res.data.results
+        topStories: res.data.results.slice(0,12)
       })
     })
   }
 
   render() {
-    console.log(this.state.articles)
-    let mappedArticles = this.state.articles.map(article => {
+    console.log(this.state.topStories)
+    let mappedArticles = this.state.topStories.map(article => {
       if(article.multimedia[0]) {
         return (
           <div style={{width: '200px'}} key={article.title}>
@@ -45,7 +46,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        {mappedArticles}
+        <TopStories articles={this.state.topStories}/>
+        {/* {mappedArticles} */}
       </div>
     );
   }

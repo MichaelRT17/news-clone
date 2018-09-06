@@ -11,7 +11,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.get('/api/getArticles', ctrl.getArticles);
+app.get('/api/getTopStories', ctrl.getTopStories);
 
 app.listen(SERVER_PORT, () => {
     console.log(`Yo yo yo from port: 4444`)

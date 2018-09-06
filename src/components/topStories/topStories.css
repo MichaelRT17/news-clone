@@ -1,0 +1,17 @@
+.top-stories-sticky-bar {
+    height: 13.6;
+    width: 389.4px;
+    padding: 14px 0 13px 25px;
+    position: sticky;
+    top: 2px;
+    background: white;
+    border-top: solid 1px lightgray;
+    border-bottom: solid 1px lightgray;
+}
+
+.top-stories-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+}
