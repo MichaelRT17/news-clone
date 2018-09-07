@@ -16,7 +16,7 @@ class App extends Component {
   componentDidMount() {
     axios.get('/api/getTopStories').then(res => {
       this.setState({
-        topStories: res.data.results.slice(0,12)
+        topStories: res.data.results.splice(0,12)
       })
     })
   }

@@ -1,0 +1,25 @@
+.link-arrow {
+    color: lightblue;
+    font-size: 18px;
+    float: right;
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+.dividing-article-line {
+    color: lightgray;
+    width: 364.4px;
+}
+
+.header-ending-block {
+    height: 30px;
+    background-color: #F7F7F7;
+}
+
+.bottom-of-article-chunk {
+    border-bottom: 1px solid lightgray;
+}
